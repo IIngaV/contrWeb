@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2 class="page-header">Запрос</h2>
+    <table class="table table-stripped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for requires in requires %}
+            <tr>
+                <th scope="row">{{requires.id}}</th>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
